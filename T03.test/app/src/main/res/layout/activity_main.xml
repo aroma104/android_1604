@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kang.t03test.MainActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_below="@id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_below="@id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ridio 1" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ridio 2" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ridio 3" />
+    </RadioGroup>
+
+    //inputType="number" 는 숫자만 넣어라
+    //inputType="textEmailAddress" 는 숫자만 넣어라
+
+    <EditText
+        android:id="@+id/editText"
+        android:inputType="number"
+        android:hint="input here"
+        android:layout_below="@id/RadioGroup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_toRightOf="@id/editText"
+        android:layout_alignBottom="@id/editText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Click" />
+
+</RelativeLayout>
